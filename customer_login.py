@@ -21,7 +21,7 @@ list_id = []
 def cust_login():
     cur.execute("select * from customer")
     for i in cur:
-        list_id.append(i[0])  # because our first column in out table is customer id column
+        list_id.append(i[0])  # because our first column in our table is customer id column
     c_id = int(input("enter your id: "))
     if c_id in list_id:
         print("Make a choice\n1. view products\n2. update details\n3. cancel booked product")
